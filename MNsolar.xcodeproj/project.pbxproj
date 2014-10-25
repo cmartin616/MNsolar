@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C0CCBD19FC5FA700D4B1D9 /* menuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0CCBC19FC5FA700D4B1D9 /* menuView.m */; };
+		35C0CCC019FC5FC900D4B1D9 /* map_background.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 35C0CCBF19FC5FC900D4B1D9 /* map_background.tiff */; };
+		35C0CCC219FC606800D4B1D9 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C0CCC119FC606800D4B1D9 /* ArcGIS.bundle */; };
 		35E843B919FC560F0094DE16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E843B819FC560F0094DE16 /* main.m */; };
 		35E843BC19FC560F0094DE16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E843BB19FC560F0094DE16 /* AppDelegate.m */; };
 		35E843BF19FC560F0094DE16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E843BE19FC560F0094DE16 /* ViewController.m */; };
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35C0CCBB19FC5FA700D4B1D9 /* menuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuView.h; sourceTree = "<group>"; };
+		35C0CCBC19FC5FA700D4B1D9 /* menuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuView.m; sourceTree = "<group>"; };
+		35C0CCBF19FC5FC900D4B1D9 /* map_background.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = map_background.tiff; sourceTree = "<group>"; };
+		35C0CCC119FC606800D4B1D9 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
 		35E843B319FC560F0094DE16 /* MNsolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNsolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E843B719FC560F0094DE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35E843B819FC560F0094DE16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35C0CCBE19FC5FB600D4B1D9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				35C0CCBF19FC5FC900D4B1D9 /* map_background.tiff */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		35E843AA19FC560F0094DE16 = {
 			isa = PBXGroup;
 			children = (
+				35C0CCC119FC606800D4B1D9 /* ArcGIS.bundle */,
+				35C0CCBE19FC5FB600D4B1D9 /* assets */,
 				35E843B519FC560F0094DE16 /* MNsolar */,
 				35E843CF19FC560F0094DE16 /* MNsolarTests */,
 				35E843B419FC560F0094DE16 /* Products */,
@@ -89,6 +106,8 @@
 				35E843C319FC560F0094DE16 /* Images.xcassets */,
 				35E843C519FC560F0094DE16 /* LaunchScreen.xib */,
 				35E843B619FC560F0094DE16 /* Supporting Files */,
+				35C0CCBB19FC5FA700D4B1D9 /* menuView.h */,
+				35C0CCBC19FC5FA700D4B1D9 /* menuView.m */,
 			);
 			path = MNsolar;
 			sourceTree = "<group>";
@@ -202,6 +221,8 @@
 				35E843C219FC560F0094DE16 /* Main.storyboard in Resources */,
 				35E843C719FC560F0094DE16 /* LaunchScreen.xib in Resources */,
 				35E843C419FC560F0094DE16 /* Images.xcassets in Resources */,
+				35C0CCC019FC5FC900D4B1D9 /* map_background.tiff in Resources */,
+				35C0CCC219FC606800D4B1D9 /* ArcGIS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E843BF19FC560F0094DE16 /* ViewController.m in Sources */,
+				35C0CCBD19FC5FA700D4B1D9 /* menuView.m in Sources */,
 				35E843BC19FC560F0094DE16 /* AppDelegate.m in Sources */,
 				35E843B919FC560F0094DE16 /* main.m in Sources */,
 			);
@@ -345,8 +367,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
 				INFOPLIST_FILE = MNsolar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,8 +385,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
 				INFOPLIST_FILE = MNsolar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +452,7 @@
 				35E843D819FC560F0094DE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35E843D919FC560F0094DE16 /* Build configuration list for PBXNativeTarget "MNsolarTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +461,7 @@
 				35E843DB19FC560F0094DE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
