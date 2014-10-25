@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  MNsolar
 //
 //  Created by Chris Martin on 10/25/14.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ArcGIS/ArcGIS.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
