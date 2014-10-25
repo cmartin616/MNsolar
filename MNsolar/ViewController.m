@@ -24,4 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)menuAction:(id)sender {
+    NSLog(@"Menu Pressed");
+}
 @end

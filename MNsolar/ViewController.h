@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
+- (IBAction)menuAction:(id)sender;
 
 
 @end
