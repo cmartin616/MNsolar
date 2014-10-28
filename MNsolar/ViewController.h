@@ -7,12 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+
+//Import the header file for ArcGIS framework
 #import <ArcGIS/ArcGIS.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *menuButton;
-- (IBAction)menuAction:(id)sender;
 
+//LAYOUT
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+@property (weak, nonatomic) IBOutlet UIToolbar *menuTool;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *bookmarkTool;
+
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *basemapToggle;
+- (IBAction)basemapChanged:(id)sender;
+
+
+// MAP
+@property (weak, nonatomic) IBOutlet AGSMapView *mapView;
 
 @end
 
