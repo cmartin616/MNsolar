@@ -17,6 +17,12 @@
 		35E843C419FC560F0094DE16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E843C319FC560F0094DE16 /* Images.xcassets */; };
 		35E843C719FC560F0094DE16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E843C519FC560F0094DE16 /* LaunchScreen.xib */; };
 		35E843D319FC560F0094DE16 /* MNsolarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E843D219FC560F0094DE16 /* MNsolarTests.m */; };
+		BD97F7B319FF4285007B4B2E /* bookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7B219FF4285007B4B2E /* bookmarksViewController.m */; };
+		BD97F7B619FF42E5007B4B2E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7B519FF42E5007B4B2E /* ResultsViewController.m */; };
+		BD97F7B919FF4317007B4B2E /* saveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7B819FF4317007B4B2E /* saveViewController.m */; };
+		BD97F7BC19FF48DD007B4B2E /* cameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7BB19FF48DD007B4B2E /* cameraViewController.m */; };
+		BD97F7BF19FF4B45007B4B2E /* reportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7BE19FF4B45007B4B2E /* reportViewController.m */; };
+		BD97F7C219FF4BDE007B4B2E /* welcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD97F7C119FF4BDE007B4B2E /* welcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,18 @@
 		35E843CC19FC560F0094DE16 /* MNsolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNsolarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E843D119FC560F0094DE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35E843D219FC560F0094DE16 /* MNsolarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNsolarTests.m; sourceTree = "<group>"; };
+		BD97F7B119FF4285007B4B2E /* bookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookmarksViewController.h; sourceTree = "<group>"; };
+		BD97F7B219FF4285007B4B2E /* bookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookmarksViewController.m; sourceTree = "<group>"; };
+		BD97F7B419FF42E5007B4B2E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsViewController.h; path = MNsolar/ResultsViewController.h; sourceTree = "<group>"; };
+		BD97F7B519FF42E5007B4B2E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsViewController.m; path = MNsolar/ResultsViewController.m; sourceTree = "<group>"; };
+		BD97F7B719FF4317007B4B2E /* saveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = saveViewController.h; path = MNsolar/saveViewController.h; sourceTree = "<group>"; };
+		BD97F7B819FF4317007B4B2E /* saveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = saveViewController.m; path = MNsolar/saveViewController.m; sourceTree = "<group>"; };
+		BD97F7BA19FF48DD007B4B2E /* cameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cameraViewController.h; path = MNsolar/cameraViewController.h; sourceTree = "<group>"; };
+		BD97F7BB19FF48DD007B4B2E /* cameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cameraViewController.m; path = MNsolar/cameraViewController.m; sourceTree = "<group>"; };
+		BD97F7BD19FF4B45007B4B2E /* reportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reportViewController.h; path = MNsolar/reportViewController.h; sourceTree = "<group>"; };
+		BD97F7BE19FF4B45007B4B2E /* reportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = reportViewController.m; path = MNsolar/reportViewController.m; sourceTree = "<group>"; };
+		BD97F7C019FF4BDE007B4B2E /* welcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = welcomeViewController.h; path = MNsolar/welcomeViewController.h; sourceTree = "<group>"; };
+		BD97F7C119FF4BDE007B4B2E /* welcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = welcomeViewController.m; path = MNsolar/welcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +120,19 @@
 				35E843BB19FC560F0094DE16 /* AppDelegate.m */,
 				35E843BD19FC560F0094DE16 /* ViewController.h */,
 				35E843BE19FC560F0094DE16 /* ViewController.m */,
+				BD97F7B119FF4285007B4B2E /* bookmarksViewController.h */,
+				BD97F7B219FF4285007B4B2E /* bookmarksViewController.m */,
 				35E843C019FC560F0094DE16 /* Main.storyboard */,
+				BD97F7C019FF4BDE007B4B2E /* welcomeViewController.h */,
+				BD97F7C119FF4BDE007B4B2E /* welcomeViewController.m */,
+				BD97F7BD19FF4B45007B4B2E /* reportViewController.h */,
+				BD97F7BE19FF4B45007B4B2E /* reportViewController.m */,
+				BD97F7BA19FF48DD007B4B2E /* cameraViewController.h */,
+				BD97F7BB19FF48DD007B4B2E /* cameraViewController.m */,
+				BD97F7B719FF4317007B4B2E /* saveViewController.h */,
+				BD97F7B819FF4317007B4B2E /* saveViewController.m */,
+				BD97F7B419FF42E5007B4B2E /* ResultsViewController.h */,
+				BD97F7B519FF42E5007B4B2E /* ResultsViewController.m */,
 				35E843C319FC560F0094DE16 /* Images.xcassets */,
 				35E843C519FC560F0094DE16 /* LaunchScreen.xib */,
 				35E843B619FC560F0094DE16 /* Supporting Files */,
@@ -240,9 +270,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD97F7BF19FF4B45007B4B2E /* reportViewController.m in Sources */,
 				35E843BF19FC560F0094DE16 /* ViewController.m in Sources */,
+				BD97F7BC19FF48DD007B4B2E /* cameraViewController.m in Sources */,
+				BD97F7C219FF4BDE007B4B2E /* welcomeViewController.m in Sources */,
 				35C0CCBD19FC5FA700D4B1D9 /* menuView.m in Sources */,
+				BD97F7B919FF4317007B4B2E /* saveViewController.m in Sources */,
 				35E843BC19FC560F0094DE16 /* AppDelegate.m in Sources */,
+				BD97F7B619FF42E5007B4B2E /* ResultsViewController.m in Sources */,
+				BD97F7B319FF4285007B4B2E /* bookmarksViewController.m in Sources */,
 				35E843B919FC560F0094DE16 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
