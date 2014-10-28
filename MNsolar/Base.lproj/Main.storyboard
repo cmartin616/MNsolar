@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -24,7 +24,7 @@
         <!--WelcomeViewController-->
         <scene sceneID="S4Y-1R-vFd">
             <objects>
-                <viewController title="WelcomeViewController" id="Y8T-1z-6j4" sceneMemberID="viewController">
+                <viewController title="WelcomeViewController" id="Y8T-1z-6j4" customClass="welcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hOZ-Sf-LLB"/>
                         <viewControllerLayoutGuide type="bottom" id="46e-1q-vpj"/>
@@ -61,7 +61,7 @@
         <!--ResultsViewController-->
         <scene sceneID="tyP-FP-xIM">
             <objects>
-                <viewController title="ResultsViewController" id="N5U-17-Zfh" sceneMemberID="viewController">
+                <viewController title="ResultsViewController" id="N5U-17-Zfh" customClass="reportViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o9s-Ra-B7z"/>
                         <viewControllerLayoutGuide type="bottom" id="yhj-mr-9sO"/>
@@ -92,7 +92,7 @@
         <!--ReportViewController-->
         <scene sceneID="5BA-Wf-tKH">
             <objects>
-                <viewController title="ReportViewController" id="52N-5k-XLH" sceneMemberID="viewController">
+                <viewController title="ReportViewController" id="52N-5k-XLH" customClass="reportViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pNl-FW-sGx"/>
                         <viewControllerLayoutGuide type="bottom" id="JZU-6A-c3G"/>
@@ -110,7 +110,7 @@
         <!--SaveViewController-->
         <scene sceneID="1zY-u7-ka8">
             <objects>
-                <viewController title="SaveViewController" id="Akk-be-KiP" sceneMemberID="viewController">
+                <viewController title="SaveViewController" id="Akk-be-KiP" customClass="saveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZJh-Fe-wSf"/>
                         <viewControllerLayoutGuide type="bottom" id="szX-8l-Lq7"/>
@@ -148,7 +148,7 @@
         <!--CameraViewController-->
         <scene sceneID="Txe-FI-hrM">
             <objects>
-                <viewController title="CameraViewController" id="34Z-eC-R31" sceneMemberID="viewController">
+                <viewController title="CameraViewController" id="34Z-eC-R31" customClass="cameraViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbZ-NM-Yfo"/>
                         <viewControllerLayoutGuide type="bottom" id="I9U-ZM-kPJ"/>
@@ -166,7 +166,7 @@
         <!--BookmarksViewController-->
         <scene sceneID="3A7-lK-VkW">
             <objects>
-                <viewController title="BookmarksViewController" id="eU0-nh-4yz" sceneMemberID="viewController">
+                <viewController title="BookmarksViewController" id="eU0-nh-4yz" customClass="bookmarksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oOT-Kz-KHL"/>
                         <viewControllerLayoutGuide type="bottom" id="YjE-J5-Dvq"/>
